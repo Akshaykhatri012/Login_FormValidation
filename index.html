@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+<!------------ card starts ------------->
+     <div class="card" >
+      <div class="box" id="frontpage">
+        <div class="cardFront">
+
+        <div class="header">
+          <h2>Login</h2>
+        </div>
+
+<!----------- form starts ----------->
+
+        <form action="#" class="form" id="form_1">
+        <div class="form-control ">
+            <label for="username">Username</label>
+            <input type="text" value="" placeholder="Enter username" id="login_username"/>
+            <small>Error message</small>
+        </div>
+        <div class="form-control ">
+            <label for="password">password</label>
+            <input type="password" value="" placeholder="Enter password" id="login_password"/>
+            <small>Error message</small>
+        </div>
+        <div class="check-content">
+            <label for="checkbox" id="check-label">Remember me</label>
+              <input type="checkbox" name="" id=""> 
+        </div>       
+        <div>
+            <button class="log-button" >Login</button>
+        </div> <br>
+        <span><a href="#" id="a-pass">Forgot password?</a></span>
+    </form>
+
+<!------------ form ends ------------->
+
+        <div id="span-a">
+        <span>Do not have an account?</span>
+        <a href="#" onclick="openSignup()">Create an Account</a>
+        </div>
+
+<!------------ front-card ends ------------->
+
+<!------------ Social icons started ------------->
+
+        <div class="social-panel">
+            <p>- connect with us on -</p>
+            <div class="panel-icons">
+                <ul>
+                    <li >
+                        <a href="https://www.discord.com" target="_blank">
+                            <i class="fab fa-discord" id="discord"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="https://twitter.com" target="_blank">
+                            <i class="fab fa-twitter" id="twitter"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="https://linkedin.com" target="_blank">
+                            <i class="fab fa-linkedin" id="linkedin"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="https://facebook.com" target="_blank">
+                            <i class="fab fa-facebook" id="facebook"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="https://instagram.com" target="_blank">
+                            <i class="fab fa-instagram" id="instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+ </div>
+
+<!-- ----------- -->
+
+<div class="cardBack" id="backpage">
+    <div class="header"><h2>Create an Account</h2></div>
+
+    <!---------------- form started -------------->
+
+    <form action="#" class="form" id="form_2">
+        <div class="form-control ">
+            <label for="name">Name</label>
+            <input type="text" placeholder="abc" required id="Name"/>
+            <small>Error message</small>
+        </div>
+        <div class="form-control ">
+            <label for="UserName">Create a Username</label>
+            <input type="email" placeholder="EHabc017" required id="username"/>
+            <small>Error message</small>
+        </div>
+        
+        <div class="form-control ">
+            <label for="CreatePassword">Create password</label>
+            <input type="password" placeholder="**80328**" required id="password"/>
+            <small>Error message</small>
+        </div>
+        <div class="form-control ">
+            <label for="ConfirmPassword">Confirm password</label>
+            <input type="password" placeholder="#*80328*#" required id="password_2"/>
+            <small>Error message</small>
+        </div>
+        <div class="check-content">
+            <input type="checkbox"  class="check-click"/>
+            <label for="checkbox" id="check-label">I accept all terms and conditions</label>
+        </div>
+        <div>
+            <button class="log-button" >Sign up</button>
+        </div>
+    </form>
+
+    <!--------------- form ends ----------------->
+
+    <div id="span-a">
+        <span>Already have an account?</span>
+        <a href="#" onclick="openLogin()">Login now</a>
+        </div>
+</div>
+    <!------------ back-card ends ------------->
+
+</div>
+</div>
+</div>
+
+
+<script src="./script.js"></script>
+</body>
+</html>
+
+<!---------- html completed------------>
